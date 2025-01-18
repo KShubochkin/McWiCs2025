@@ -30,4 +30,5 @@ class IngredientDatabase{
       toAdd.add(tag);
     }
     ingredients.add(new Ingredient(unit, name, tag));
+  }
 }
