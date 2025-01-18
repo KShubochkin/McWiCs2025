@@ -16,11 +16,18 @@ class IngredientDatabase{
     return ingredients;
   }
   public Set<Ingredient> search(Tag tag){
-    Set<Ingredient> toReturn = newHashSet<>();
+    Set<Ingredient> toReturn = new HashSet<>();
     for (Ingredient ingredient: ingredients){
       if (ingredient.getTags().contains(tag)){
         toReturn.add(ingredient);
       }
     }
     return toReturn;
+  }
+  public void addIngredient(String name, Unit unit, Tag[] tags){
+    Set<Tag> toAdd = new HashSet<>();
+    for (Tag tag: tags){
+      toAdd.add(tag);
+    }
+    ingredients.add(new Ingredient(unit, name, tag));
 }
