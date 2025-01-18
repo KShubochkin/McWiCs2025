@@ -10,4 +10,13 @@ public class Ingredient {
         this.name = name;
         this.tags = tags;
     }
+    public Unit getUnit(){
+        return unit;
+    }
+    public String getName(){
+        return name;
+    }
+    public Set<Tag> getTags(){
+        return tags;
+    }
 }
