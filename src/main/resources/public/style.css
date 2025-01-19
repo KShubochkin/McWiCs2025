@@ -1,0 +1,23 @@
+/* this is random styling */
+body {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005F6A;
+}
