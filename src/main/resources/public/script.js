@@ -32,5 +32,8 @@ const addName=document.querySelector('#itemName');
 const addQuantity =document.querySelector('#itemQuantity');
 addButton.addEventListener("click", ()=>{
     const item = addName.value;
+const java = require('java');
+java.classpath.push('C:/Users/corna/Downloads/McWiCs 2025/src/main/java')
+const javaClassInventory = java.import('')
 
 })
