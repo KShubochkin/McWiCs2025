@@ -7,11 +7,6 @@ FRIDGE is a program that helps people decide what to cook based on the items in 
 FRIDGE has a set of standard ingredients that it keeps track of in a person's fridge: milk, eggs, chicken, etc. It then uses a dataset of recipes for various websites and parses to find those that the user has the ingredients for.
 
 ## **Resources**
-1. Figma for the display
-3. Kaggle: RecipeNLG (cooking recipes dataset)
-
-4. https://www.kaggle.com/code/chrismolanus/cluster-recipes-by-ingredients
-
 
 Things to accomplish for this project:
 1. database of possible ingredients in the fridge
