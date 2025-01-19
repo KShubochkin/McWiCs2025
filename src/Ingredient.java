@@ -5,7 +5,7 @@ public class Ingredient {
     private String name;
     private Set<Tag> tags;
 
-    public Ingredient(){
+    public Ingredient(String name, Unit unit,Set<Tag> tags){
         this.unit = unit;
         this.name = name;
         this.tags = tags;

@@ -1,14 +1,15 @@
-import java.util.Set
+import java.util.HashSet;
+import java.util.Set;
   
 class IngredientDatabase{
   private static IngredientDatabase instance;
   private Set<Ingredient> ingredients;
-  private IngredientsDatabase(){
+  IngredientDatabase(){
     ingredients = new HashSet<>();
   }
   public static IngredientDatabase getInstance(){
     if (instance == null){
-      instance = new IngredientDatabase;
+      instance = new IngredientDatabase();
     }
     return instance;
   }
@@ -29,6 +30,6 @@ class IngredientDatabase{
     for (Tag tag: tags){
       toAdd.add(tag);
     }
-    ingredients.add(new Ingredient(unit, name, tag));
+    ingredients.add(new Ingredient(name, unit, toAdd));
   }
 }
