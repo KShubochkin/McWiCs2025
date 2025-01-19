@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class Inventory {
     private Map<Ingredient,Double> items = new HashMap<>();
-    public void addItem(Ingredient item, double amount){
+    /*public void addItem(Ingredient item, double amount){
         //check if item exists
         if(IngredientDatabase.itemExists(item)){
             Double newAmt = items.get(item) +amount;
@@ -12,7 +12,7 @@ public class Inventory {
         //if so, add
         //if not, plus show "similar results"
         ingredientNotFound(item, amount);
-    }
+    }*/
     Inventory(){
         //load all existing foods from selected ones
         for(Ingredient i:IngredientDatabase.getInstance().getIngredients()){

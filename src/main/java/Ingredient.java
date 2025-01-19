@@ -4,9 +4,9 @@ public class Ingredient {
     private Unit unit;
     private String name;
     private Set<Tag> tags;
-    private Float amount;
+    private Double amount;
 
-    public Ingredient(String name, Unit unit,Set<Tag> tags, Float amount){
+    public Ingredient(String name, Unit unit,Set<Tag> tags, Double amount){
         this.unit = unit;
         this.name = name;
         this.tags = tags;
@@ -21,7 +21,7 @@ public class Ingredient {
     public Set<Tag> getTags(){
         return tags;
     }
-    public Float getAmount(){
+    public Double getAmount(){
         return amount;
     }
 }

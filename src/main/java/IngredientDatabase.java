@@ -25,11 +25,14 @@ class IngredientDatabase{
     }
     return toReturn;
   }
-  public void addIngredient(String name, Unit unit, Tag[] tags){
+  public static void addIngredient(String name, Unit unit, Tag[] tags){
     Set<Tag> toAdd = new HashSet<>();
     for (Tag tag: tags){
       toAdd.add(tag);
     }
-    ingredients.add(new Ingredient(name, unit, toAdd));
+    getInstance().ingredients.add(new Ingredient(name, unit, toAdd,0.0));
+  }
+  public boolean itemExists(Ingredient item){
+    return false;
   }
 }
