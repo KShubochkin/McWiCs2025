@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,7 +40,7 @@ public class Inventory {
                 }
                 results.add(toAdd);
             }
-            node = node.children.get(c);
+            node = node.children.get('c'); //?
             if (node == null){
                 return new ArrayList<>();
             }
@@ -58,7 +59,7 @@ public class Inventory {
         }
     }
     
-    private void ingredientNotFound(String item, Double amount){
+    /*private void ingredientNotFound(String item, Double amount){
         //search existing ingredients for similarly spelled items, or items that contain the input (if we have time lmao)
         ArrayList<String> possibilities = searchForIngredients(item);
         String possibilitiesAsString[] = possibilities.toArray;
@@ -68,7 +69,7 @@ public class Inventory {
                 newString = possibilitiesAsString[0];
             }
             if (possibilitiesAsString.length == 2){
-                newString = "'"+possibilitiesAsString[0] + "' or '" + possibilitiesAsString[1] + "'"
+                newString = "'"+possibilitiesAsString[0] + "' or '" + possibilitiesAsString[1] + "'";}
             else{
                 for (int j = 0; j < possibilitiesAsString.length - 1; j++){
                     newString = newString + "'" + possibilitiesAsString[j] + ",' ";
@@ -85,6 +86,6 @@ public class Inventory {
         }
         //create new ingredient in "database"
         //item.newItem();
-    }
+    }*/
 
 }
